@@ -44,11 +44,11 @@ def Set_UP(ip, udp, dns, q):
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument("-D", "--optional-arg", help="Assign specific DNS server", dest="dserver", default="default")
-    parser.add_argument("-T", "--optional-arg", help="target server", dest="target", default="default")
+    parser.add_argument("-D", "--DNS-server", help="Assign specific DNS server", dest="D")
+    parser.add_argument("-T", "--Target", help="target server", dest="T")
     args = parser.parse_args()
-    print('DNS server: %s' %args.dserver)
-    print('Target: %s' %args.target)
+    print('DNS server: %s' %args.D)
+    print('Target: %s' %args.T)
 
     ip = construct_IP()
     udp = construct_UDP()
