@@ -2,6 +2,7 @@ from scapy.all import *
 
 from argparse import ArgumentParser
 import sys
+import os
 
 def construct_IP(DNSaddr):
     # Construct IP packet
@@ -62,3 +63,5 @@ if __name__ == '__main__':
     q = construct_DNSQR()
 
     r = Set_UP(ip, udp, dns, q, args.T)
+
+    os.system('pause')
