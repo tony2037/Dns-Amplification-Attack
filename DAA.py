@@ -1,4 +1,6 @@
 from scapy.all import *
+
+from argparse import ArgumentParser
 import sys
 
 def construct_IP():
@@ -40,7 +42,7 @@ def Set_UP(ip, udp, dns, q):
     r.display()
     return r
 
-if __name__ == '__main__'():
+if __name__ == '__main__':
     ip = construct_IP()
     udp = construct_UDP()
     dns = construct_DNS()
