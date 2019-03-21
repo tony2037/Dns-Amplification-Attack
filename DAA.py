@@ -39,6 +39,7 @@ def Set_UP(ip, udp, dns, q, target = '127.0.0.1'):
     # Concencate
     r = (ip/udp/dns)
     r.display()
+    # SYN scan
     sr1(r)
 
     # Set up r
