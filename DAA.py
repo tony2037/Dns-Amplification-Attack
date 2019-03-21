@@ -1,33 +1,49 @@
 from scapy.all import *
 import sys
 
-# Construct IP packet
-ip = IP()
-ip.show()
+def construct_IP():
+    # Construct IP packet
+    ip = IP()
+    ip.show()
+    return ip
 
-# Construct UDP packet
-udp = UDP()
-u.display()
+def construct_UDP():
+    # Construct UDP packet
+    udp = UDP()
+    udp.display()
+    return udp
 
-# Construct DNS packet
-dns = DNS()
-dns.display()
+def construct_DNS():
+    # Construct DNS packet
+    dns = DNS()
+    dns.display()
+    return dns
 
-# Construct DNS Question Record
-q = DNSQR()
-q.display()
+def construct_DNSQR():
+    # Construct DNS Question Record
+    q = DNSQR()
+    q.display()
+    return q
 
-# Set DNS Question Record in DNS packet
-dns.qd = q
+def Set_UP(ip, udp, dns, q):
+    # Set DNS Question Record in DNS packet
+    dns.qd = q
 
-# Concencate
-r = (ip/udp/dns)
-r.display()
-sr1(r)
+    # Concencate
+    r = (ip/udp/dns)
+    r.display()
+    sr1(r)
 
-# Set up r
-r.src = ''
-r = (ip/udp/dns)
-r.display()
-send(r)
+    # Set up r
+    r.src = ''
+    r = (ip/udp/dns)
+    r.display()
+    return r
 
+if __name__ == '__main__'():
+    ip = construct_IP()
+    udp = construct_UDP()
+    dns = construct_DNS()
+    q = construct_DNSQR()
+    r = Set_UP(ip, udp, dns, q)
+    send(r)
