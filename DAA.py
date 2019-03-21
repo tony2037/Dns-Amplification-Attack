@@ -65,7 +65,7 @@ if __name__ == '__main__':
     r = Set_UP(ip, udp, dns, q, args.T)
 
     a = 'Y'
-    a = raw_input('Are you sure you want to attack ? [Y]/N')
+    a = input('Are you sure you want to attack ? [Y]/N')
     if (a == 'Y'):
         send(r)
     else:
