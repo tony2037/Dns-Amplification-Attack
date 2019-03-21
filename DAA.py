@@ -54,5 +54,3 @@ if __name__ == '__main__':
     udp = construct_UDP()
     dns = construct_DNS()
     q = construct_DNSQR()
-    r = Set_UP(ip, udp, dns, q)
-    send(r)
