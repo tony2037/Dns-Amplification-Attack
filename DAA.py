@@ -64,4 +64,9 @@ if __name__ == '__main__':
 
     r = Set_UP(ip, udp, dns, q, args.T)
 
-    os.system('pause')
+    a = 'Y'
+    a = raw_input('Are you sure you want to attack ? [Y]/N')
+    if (a == 'Y'):
+        send(r)
+    else:
+        exit()
