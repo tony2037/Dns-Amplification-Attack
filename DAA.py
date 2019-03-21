@@ -43,6 +43,11 @@ def Set_UP(ip, udp, dns, q):
     return r
 
 if __name__ == '__main__':
+    parser = ArgumentParser()
+    parser.add_argument("pos1", help="positional argument 1")
+    parser.add_argument("-o", "--optional-arg", help="optional argument", dest="opt", default="default")
+    args = parser.parse_args()
+
     ip = construct_IP()
     udp = construct_UDP()
     dns = construct_DNS()
