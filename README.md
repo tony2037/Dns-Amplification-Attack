@@ -26,7 +26,7 @@ Used for sniffing packet to varify
 ## Result
 Sending: 70 bytes
 Receiving: 500~ 700 bytes
-$A=$$7$~$10$
+Amplification is about 7 ~ 10 times
 
 ## Usage
 ### Build virtual environment
