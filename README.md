@@ -2,6 +2,7 @@ DNS Amplification attack
 ===
 contribute by < `ztex` >
 [github-Dns-Amplification-Attack](https://github.com/tony2037/Dns-Amplification-Attack)
+[hackmd](https://hackmd.io/s/rkOF6EJu4)
 
 # How does it work ?
 According to [DNS Amplification Attack](https://www.cloudflare.com/learning/ddos/dns-amplification-ddos-attack/) :
